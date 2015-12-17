@@ -1,0 +1,105 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+/* edits */
+
+/* {
+  font-weight: 400;
+  border: 2px solid black;
+ } */
+
+/* .mywork .card-reveal p {
+  font-size: 18px;
+ }*/
+nav {
+  backgournd-color: red;
+}
+
+.materialize-grey.darken-1 {
+  background-color: #757575;
+}
+
+.grid-item { width: 50px; }
+.grid-item--width2 { width: 50px; }
+
+.materialize-red.lighten-5 {
+  background-color: #fdeaeb !important;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.cardinfo {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.parallax-container {
+  height: 650px;
+}
+
+.plax {
+  height: 1%;
+}
+
+.headshot {
+  height: 240px;
+  width: 240px;
+  vertical-align: middle;
+  margin-top: 30px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*Changes made to fix lax cutting off the card*/
+.lax2 {
+  /*    padding-top: 20px;
+      padding-bottom: 20px;*/
+  height: 0.3%;
+}
+
+#subtitle {
+  display: inline-block;
+  text-align: left;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.foot {
+  padding-top: 0px;
+}
+
+.list {
+  display: center;
+  padding-top: 0px;
+  padding-bottom: 40px;
+}
+
+.card2 {
+    margin: 0px;
+}
+
+.footer-text {
+  text-align: left;
+  padding: 0px;
+  margin: 0px;
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+/*Added Card class to container for the cards*/
+
+.fix {
+  margin: 2% auto;
+}
