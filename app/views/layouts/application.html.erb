@@ -2,13 +2,43 @@
 <html>
 <head>
   <title>Portfolio</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <%= stylesheet_link_tag('https://fonts.googleapis.com/icon?family=Material+Icons') %>
+  <%= stylesheet_link_tag('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css') %>
+  <%= stylesheet_link_tag('https://fonts.googleapis.com/icon?family=Material+Icons') %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js' %>
+  <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js' %>
   <%= csrf_meta_tags %>
-</head>
-<body>
 
-<%= yield %>
+<!-- CSS  -->
+</head>
+<body class='blue'>
+  <!--navbar-->
+    <nav>
+    <div class="container nav-wrapper">
+      <a href="#!" class="brand-logo right">Jonathan York</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <li><a data-target="modal1" class="modal-trigger">Contact Me</a>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <h3 class="teal-text"><i class="mdi-social-group"></i></h3><h4 class="black-text">Let's Talk!</h4>
+        <div class="collection">
+          <a href="mailto: jonathanyork02@gmail.com" class="collection-item" target="_blank">Gmail</a>
+          <a href="https://github.com/jyork779" class="collection-item" target="_blank">GitHub</a>
+          <a href="https://drive.google.com/file/d/0B54PlPLI7GV6cXI3WmhUVjFFVlE/view?usp=sharing" class="collection-item" target="_blank">Resume</a>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <!--End navbar-->
+
+
+
+  <%= yield %>
 
 </body>
 </html>
